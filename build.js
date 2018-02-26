@@ -93,10 +93,10 @@ handlebars.registerHelper("log", function(something) {
 
 
 //handlebars partials
-// handlebars.registerPartial('header', fs.readFileSync(__dirname + '/layouts/partials/header.html').toString());
-// handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/layouts/partials/footer.html').toString());
+handlebars.registerPartial('header', fs.readFileSync(__dirname + '/layouts/partials/header.html').toString());
+handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/layouts/partials/footer.html').toString());
 // handlebars.registerPartial('contact', fs.readFileSync(__dirname + '/layouts/partials/contact.html').toString());
-// handlebars.registerPartial('breadcrumbs', fs.readFileSync(__dirname + '/layouts/partials/breadcrumbs.html').toString());
+handlebars.registerPartial('breadcrumbs', fs.readFileSync(__dirname + '/layouts/partials/breadcrumbs.html').toString());
 // handlebars.registerPartial('siblings-nav', fs.readFileSync(__dirname + '/layouts/partials/siblings-nav.html').toString());
 // handlebars.registerPartial('productlabel', fs.readFileSync(__dirname + '/layouts/partials/productlabel.html').toString());
 

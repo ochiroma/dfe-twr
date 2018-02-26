@@ -1,0 +1,33 @@
+
+<nav class="breadcrumbs">
+<ul>
+
+{{!-- Level 3  --}}
+{{#if this.ancestry.parent.ancestry.parent.ancestry.parent }}
+<li><a href="/{{cleanURL this.ancestry.parent.ancestry.parent.ancestry.parent.path}}">{{this.ancestry.parent.ancestry.parent.ancestry.parent.title}}</a> </li>
+
+
+{{/if}}
+
+{{!-- Level 2  --}}
+{{#if this.ancestry.parent.ancestry.parent }}
+<li><a href="/{{cleanURL this.ancestry.parent.ancestry.parent.path}}">{{this.ancestry.parent.ancestry.parent.title}}</a> </li>
+
+{{/if}}
+
+
+{{!-- Level 1  --}}
+{{#if ancestry.parent }}
+<li><a href="/{{cleanURL this.ancestry.parent.path}}">{{ this.ancestry.parent.title }}</a> </li>
+
+
+{{/if}}
+{{#if title }}
+<li>{{ title }}</li>
+{{/if}}
+
+
+{{#> breadcrumbs-block}}
+{{/breadcrumbs-block}}
+</ul>
+</nav>

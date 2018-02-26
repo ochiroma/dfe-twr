@@ -1,3 +1,21 @@
-<h1>{{ title }}</h1>
-<p>{{{ marked introduction }}}</p>
-<p>{{ contents }}</p>
+{{> header title=title }}
+<div id="global-header-bar"></div>
+
+<div class="site-wrapper">
+{{> breadcrumbs}}
+<div class="grid-row">
+
+<div class="column-full">
+<h1 class="heading-xlarge">{{ title }}</h1>
+</div>
+
+<div class="column-two-thirds">
+<div class="">{{{ marked introduction }}}</div>
+<hr>
+</div>
+</div>
+</div>
+
+{{ contents }}
+
+{{> footer }}
