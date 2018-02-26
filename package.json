@@ -1,0 +1,35 @@
+{
+  "name": "dfe-twr-alpha",
+  "version": "1.0.0",
+  "description": "dfe-twr-alpha",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified - force pass\" && exit 0",
+    "postinstall": "node build.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ochiroma/dfe-twr-alpha.git"
+  },
+  "author": "Onkar Chiroma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ochiroma/dfe-twr-alpha/issues"
+  },
+  "homepage": "https://github.com/ochiroma/dfe-twr-alpha#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "handlebars": "^4.0.10",
+    "marked": "^0.3.6",
+    "metalsmith": "^2.3.0",
+    "metalsmith-ancestry": "^1.4.0",
+    "metalsmith-directory-hierarchy": "^1.0.1",
+    "metalsmith-layouts": "^1.8.1",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-relative-links": "^1.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
