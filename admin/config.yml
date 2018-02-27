@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: ochiroma/dfe-twr-alpha # Path to your Github repository
+  branch: master # Branch to update (master by default)
+  base_url: https://dfe-twr-alpha-oauth.herokuapp.com
+
+media_folder: "assets/uploads" # Folder where user uploaded files should go
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "topics" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Topics" # Used in the UI, ie.: "New Post"
+    folder: "src/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Introduction", name: "introduction", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
