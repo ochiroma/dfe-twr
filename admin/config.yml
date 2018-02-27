@@ -7,7 +7,7 @@ backend:
 media_folder: "assets/uploads" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "service-home" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "topics" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Service home" # Used in the UI, ie.: "New Post"
     folder: "src/" # The path to the folder where the documents are stored
     create: false # Allow users to create new documents in this collection
